@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENESI WISE HTML MEDIA ELEMENTS</title>
+  </head>
+  <body>
+    <h1>HTML Media Elements</h1>
+
+    <div>
+      <h2>Audio:</h2>
+      <audio controls>
+        <source src="./assets/wise.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+
+    <div>
+      <h2>Picture:</h2>
+      <picture>
+        <!-- For laptops and desktops (1024px and above) -->
+        <source srcset="./assets/wise.JPG" media="(min-width: 1024px)" />
+
+        <!-- For tablets (768px to 1023px) -->
+        <source
+          srcset="./assets/wise.JPG"
+          media="(min-width: 768px) and (max-width: 1023px)"
+        />
+
+        <!-- For mobile devices (less than 768px) -->
+        <source srcset="./assets/wise.JPG" media="(max-width: 767px)" />
+
+        <!-- Fallback image (for browsers that do not support <picture>) -->
+        <img
+          src="./assets/wise.JPG"
+          alt="Responsive image example"
+          height="300"
+        />
+      </picture>
+    </div>
+
+    <div>
+      <h2>Video:</h2>
+      <video width="200" controls>
+        <source src="./assets/wise.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <p>
+      So yea, here is me using all HTML media elements to talk about myself, i
+      also use the Picture element with more than three(3) sources of
+      responsiveness for Mobile, Tablet & Laptop...
+      <strong>Bye!</strong>
+    </p>
+
+    <button><a href="./">back to TABLE.html</a></button>
+  </body>
+</html>

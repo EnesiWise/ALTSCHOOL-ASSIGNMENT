@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENESI WISE HTML ATLSCHOOL FORM</title>
+  </head>
+  <body>
+    <nav>
+      &#8592; <a href="./">back to <strong>INDEX</strong> page</a>
+      <hr />
+    </nav>
+
+    <div class="container">
+      <h1>Signup</h1>
+      <p>Take the next steps to apply at Altschool Africa</p>
+
+      <form>
+        <table>
+          <!-- First row with 2 colums NOTE:(tr=table row & td=table column)-->
+          <tr>
+            <td><label for="firstname">First Name</label></td>
+            <td><label for="lastname">Last Name</label></td>
+          </tr>
+          <!-- second row with 2 colums -->
+          <tr>
+            <td>
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                placeholder="Enter first name"
+                required
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                placeholder="Enter last name"
+                required
+              />
+            </td>
+          </tr>
+
+          <!--third row with 2 columns-->
+          <tr>
+            <td><label for="gender">Gender</label></td>
+            <td><label>Date of Birth</label></td>
+          </tr>
+          <!-- fourth row with 2 colums -->
+          <tr>
+            <td>
+              <select id="gender" name="gender" required>
+                <option value="">select gender</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+              </select>
+            </td>
+            <td>
+              <input
+                type="date"
+                id="date"
+                name="date"
+                placeholder="YYYY-MM-DD"
+                pattern="\d{4}-\d{2}-\d{2}"
+                required
+              />
+            </td>
+          </tr>
+
+          <!--fifth row with 2 columns-->
+          <tr>
+            <td><label for="email">Email Address</label></td>
+            <td><label for="phone">Phone Number</label></td>
+          </tr>
+          <!-- sixth row with 2 colums -->
+          <tr>
+            <td>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+              />
+            </td>
+            <td>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                required
+              />
+            </td>
+          </tr>
+
+          <!--7th row with 2 columns-->
+          <tr>
+            <td><label for="country">Country</label></td>
+            <td><label for="state">State/City of Residence</label></td>
+          </tr>
+          <!-- 8th row with 2 colums -->
+          <tr>
+            <td>
+              <select id="country" name="country" required>
+                <option value="">Select your country</option>
+
+                <option value="af">Afghanistan</option>
+                <option value="al">Albania</option>
+                <option value="dz">Algeria</option>
+                <option value="as">American Samoa</option>
+                <option value="ad">Andorra</option>
+                <option value="ao">Angola</option>
+                <option value="ai">Anguilla</option>
+                <option value="ag">Antigua and Barbuda</option>
+                <option value="ar">Argentina</option>
+                <option value="am">Armenia</option>
+                <option value="aw">Aruba</option>
+                <option value="au">Australia</option>
+                <option value="at">Austria</option>
+                <option value="az">Azerbaijan</option>
+                <option value="bs">Bahamas</option>
+                <option value="bh">Bahrain</option>
+                <option value="bd">Bangladesh</option>
+                <option value="bb">Barbados</option>
+                <option value="by">Belarus</option>
+                <option value="be">Belgium</option>
+                <option value="bz">Belize</option>
+                <option value="bj">Benin</option>
+                <option value="bm">Bermuda</option>
+                <option value="bt">Bhutan</option>
+                <option value="bo">Bolivia</option>
+                <option value="ba">Bosnia and Herzegovina</option>
+                <option value="bw">Botswana</option>
+                <option value="br">Brazil</option>
+                <option value="io">British Indian Ocean Territory</option>
+                <option value="bn">Brunei Darussalam</option>
+                <option value="bg">Bulgaria</option>
+                <option value="bf">Burkina Faso</option>
+                <option value="bi">Burundi</option>
+                <option value="kh">Cambodia</option>
+                <option value="cm">Cameroon</option>
+                <option value="ca">Canada</option>
+                <option value="cv">Cape Verde</option>
+                <option value="ky">Cayman Islands</option>
+                <option value="cf">Central African Republic</option>
+                <option value="td">Chad</option>
+                <option value="cl">Chile</option>
+                <option value="cn">China</option>
+                <option value="co">Colombia</option>
+                <option value="km">Comoros</option>
+                <option value="cg">Congo</option>
+                <option value="cd">Congo (Democratic Republic of the)</option>
+                <option value="ck">Cook Islands</option>
+                <option value="cr">Costa Rica</option>
+                <option value="ci">Cote d'Ivoire</option>
+                <option value="hr">Croatia</option>
+                <option value="cu">Cuba</option>
+                <option value="cy">Cyprus</option>
+                <option value="cz">Czech Republic</option>
+                <option value="dk">Denmark</option>
+                <option value="dj">Djibouti</option>
+                <option value="dm">Dominica</option>
+                <option value="do">Dominican Republic</option>
+                <option value="ec">Ecuador</option>
+                <option value="eg">Egypt</option>
+                <option value="sv">El Salvador</option>
+                <option value="gq">Equatorial Guinea</option>
+                <option value="er">Eritrea</option>
+                <option value="ee">Estonia</option>
+                <option value="et">Ethiopia</option>
+                <option value="fk">Falkland Islands</option>
+                <option value="fo">Faroe Islands</option>
+                <option value="fj">Fiji</option>
+                <option value="fi">Finland</option>
+                <option value="fr">France</option>
+                <option value="gf">French Guiana</option>
+                <option value="pf">French Polynesia</option>
+                <option value="ga">Gabon</option>
+                <option value="gb">United Kingdom</option>
+                <option value="gh">Ghana</option>
+                <option value="gi">Gibraltar</option>
+                <option value="gr">Greece</option>
+                <option value="gl">Greenland</option>
+                <option value="gd">Grenada</option>
+                <option value="gp">Guadeloupe</option>
+                <option value="gu">Guam</option>
+                <option value="gt">Guatemala</option>
+                <option value="gg">Guernsey</option>
+                <option value="gn">Guinea</option>
+                <option value="gw">Guinea-Bissau</option>
+                <option value="gy">Guyana</option>
+                <option value="ht">Haiti</option>
+                <option value="hm">Heard Island and McDonald Islands</option>
+                <option value="hn">Honduras</option>
+                <option value="hk">Hong Kong</option>
+                <option value="hu">Hungary</option>
+                <option value="is">Iceland</option>
+                <option value="in">India</option>
+                <option value="id">Indonesia</option>
+                <option value="ir">Iran</option>
+                <option value="iq">Iraq</option>
+                <option value="ie">Ireland</option>
+                <option value="il">Israel</option>
+                <option value="it">Italy</option>
+                <option value="jm">Jamaica</option>
+                <option value="jp">Japan</option>
+                <option value="je">Jersey</option>
+                <option value="jo">Jordan</option>
+                <option value="kz">Kazakhstan</option>
+                <option value="ke">Kenya</option>
+                <option value="ki">Kiribati</option>
+                <option value="kp">North Korea</option>
+                <option value="kr">South Korea</option>
+                <option value="kw">Kuwait</option>
+                <option value="kg">Kyrgyzstan</option>
+                <option value="la">Laos</option>
+                <option value="lv">Latvia</option>
+                <option value="lb">Lebanon</option>
+                <option value="ls">Lesotho</option>
+                <option value="lr">Liberia</option>
+                <option value="ly">Libya</option>
+                <option value="li">Liechtenstein</option>
+                <option value="lt">Lithuania</option>
+                <option value="lu">Luxembourg</option>
+                <option value="mo">Macau</option>
+                <option value="mk">North Macedonia</option>
+                <option value="mg">Madagascar</option>
+                <option value="mw">Malawi</option>
+                <option value="my">Malaysia</option>
+                <option value="mv">Maldives</option>
+                <option value="ml">Mali</option>
+                <option value="mt">Malta</option>
+                <option value="mh">Marshall Islands</option>
+                <option value="mq">Martinique</option>
+                <option value="mr">Mauritania</option>
+                <option value="mu">Mauritius</option>
+                <option value="yt">Mayotte</option>
+                <option value="mx">Mexico</option>
+                <option value="fm">Micronesia</option>
+                <option value="md">Moldova</option>
+                <option value="mc">Monaco</option>
+                <option value="mn">Mongolia</option>
+                <option value="me">Montenegro</option>
+                <option value="ms">Montserrat</option>
+                <option value="ma">Morocco</option>
+                <option value="mz">Mozambique</option>
+                <option value="mm">Myanmar</option>
+                <option value="na">Namibia</option>
+                <option value="nr">Nauru</option>
+                <option value="np">Nepal</option>
+                <option value="nl">Netherlands</option>
+                <option value="nc">New Caledonia</option>
+                <option value="nz">New Zealand</option>
+                <option value="ni">Nicaragua</option>
+                <option value="ne">Niger</option>
+                <option value="ng">Nigeria</option>
+                <option value="nu">Niue</option>
+                <option value="nf">Norfolk Island</option>
+                <option value="kp">North Korea</option>
+                <option value="mp">Northern Mariana Islands</option>
+                <option value="no">Norway</option>
+                <option value="om">Oman</option>
+                <option value="pk">Pakistan</option>
+                <option value="pw">Palau</option>
+                <option value="pa">Panama</option>
+                <option value="pg">Papua New</option>
+              </select>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="state"
+                name="state"
+                placeholder="Enter your state of residence"
+                required
+              />
+            </td>
+          </tr>
+
+          <!--9th row with 1 column-->
+          <tr>
+            <td><label for="channel">How did you hear about us?</label></td>
+          </tr>
+          <!-- 10th row with 1 column -->
+          <tr>
+            <td>
+              <select id="channel" name="channel" required>
+                <option value="">Select channel</option>
+                <option value="twitter">Twitter</option>
+                <option value="facebook">Facebook</option>
+                <option value="linkedin">Linkedin</option>
+                <option value="youtube">Youtube</option>
+                <option value="friend">Friend</option>
+                <option value="whatsapp">WhatsApp</option>
+                <option value="instagram">Instagram</option>
+                <option value="billBoard">Bill Board</option>
+                <option value="salesOfficer">Sales Officer</option>
+                <option value="other">Other</option>
+              </select>
+            </td>
+          </tr>
+
+          <!-- 11th row with 2 columns -->
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td><label for="confirmPassword"> Confirm Password</label></td>
+          </tr>
+          <!-- 12th row with 2 colums -->
+          <tr>
+            <td>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter password"
+                required
+              />
+            </td>
+            <td>
+              <input
+                type="confirmPassword"
+                id="confirmPassword"
+                name="confirmPassword"
+                placeholder="Enter password again"
+                required
+              />
+            </td>
+          </tr>
+        </table>
+
+        <!-- Terms and Conditions -->
+        <div class="terms">
+          By clicking continue, I agree to
+          <a href="#">Terms of Service</a> and acknowledge that I have read the
+          <a href="#">Privacy Policy</a>.
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit &#8594;</button>
+      </form>
+    </div>
+
+    <br />
+    <br />
+    <hr />
+
+    <footer>
+      <address>
+        <span>Enesi Wise Street, Abuja-Nigeria</span>
+      </address>
+      <span>&copy; 2024 Enesi Wise. All rights reserved.</span>
+    </footer>
+  </body>
+</html>
+
+<!-- Submit button 
+<tr>
+  <td colspan="3" style="text-align: center">
+    <button type="submit">Submit &#8594;</button>
+  </td>
+</tr>
+-->
