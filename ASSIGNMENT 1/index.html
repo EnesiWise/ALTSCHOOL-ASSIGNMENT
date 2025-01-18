@@ -4,18 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ENESI WISE HTML BIOGRAPHY</title>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style1.css" />
   </head>
   <body>
     <div>
       <a id="top"></a>
-      <nav>
-        &#8594;<a href="./form.html">go to <strong>FORM</strong> page</a
-        ><button>
+
+      <nav class="nav-container">
+        <a href="./form.html" class="nav-link"
+          >&#8594; go to <strong>FORM</strong> page</a
+        >
+
+        <button class="nav-button">
           <!-- Link back to the parent -->
-          <a href="../index.html">Go Back to Parent</a>
+          <a href="../index.html" class="navBtnLink">
+            back to <strong>PARENT PAGE</strong></a
+          >
         </button>
       </nav>
+
       <h2>Name: ENESI WISE</h2>
 
       <h2>Altschool Student ID: ALT/SOE/024/3111.</h2>
@@ -82,7 +97,9 @@
         </li>
       </ul>
 
-      <button><a href="#top">top</a></button>
+      <button class="nav-button">
+        <a href="#top" class="navBtnLink">top</a>
+      </button>
     </div>
   </body>
 </html>

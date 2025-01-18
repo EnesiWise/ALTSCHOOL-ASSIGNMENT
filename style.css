@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  font-family: "Karla", serif;
+}
+
+button {
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+button:hover {
+  transform: translateY(-5px) scale(1.05); /* Lift button on hover */
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #ff758c, #ff7eb3); /* Reverse gradient */
+}
+
+/* Focus effect */
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 117, 140, 0.5);
+}
